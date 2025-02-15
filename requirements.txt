@@ -1,0 +1,7 @@
+openai==1.35.3
+langchain==0.2.5
+langchain-community==0.2.5
+tiktoken==0.7.0
+langchain-openai==0.1.9
+streamlit==1.36.0
+streamlit_chat==0.1.1
