@@ -15,7 +15,9 @@ from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.chat_models import ChatOpenAI
 
 import warnings
-openkey = "skproj-_AvVeTAKicteVqwXY86Rnv5O1nzLQdLg7OMC_UjhUaT8dsVP36ew8Y4PIdtkO0oAmBKLan5kZDT3BlbkFJducz93BQgy9wlM6DT7ygECE8X7rbPHMRCgjq3sxk5JdpHtcH3DOHWL-U659igpAmidtYTmMtQA"
+
+openkey = st.secrets["OPENAI_API_KEY"]
+
 warnings.filterwarnings("ignore")
 
 st.title("Harmony | هارموني")
