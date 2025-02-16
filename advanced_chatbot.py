@@ -1,17 +1,10 @@
 import os
 import streamlit as st
 from streamlit_chat import message
-#  أداة لإنشاء فهرس بحثي باستخدام تخزين المتجهات
 from langchain.indexes import VectorstoreIndexCreator
-
-# استيراد سلسلة محادثة تعتمد على استرجاع المعلومات، تمكن من إنشاء نظام دردشة يمكنه تذكر السياق السابق
 from langchain.chains import ConversationalRetrievalChain
-# استيراد أداة لتحميل المستندات النصية
 from langchain_community.document_loaders import TextLoader
-
-# استيراد أداة لإنشاء تمثيلات متجهية للنصوص باستخدام OpenAI
 from langchain_community.embeddings import OpenAIEmbeddings
-# استيراد نموذج دردشة من OpenAI لاستخدامه في المحادثات الذكية
 from langchain_community.chat_models import ChatOpenAI
 
 import warnings
@@ -41,7 +34,6 @@ loader.load()
 from langchain.embeddings.openai import OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings(openai_api_key=openkey)
-
 
 index = VectorstoreIndexCreator(embedding=embeddings).from_loaders([loader])
 
