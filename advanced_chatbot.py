@@ -15,7 +15,7 @@ from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.chat_models import ChatOpenAI
 
 import warnings
-
+openkey = "skproj-_AvVeTAKicteVqwXY86Rnv5O1nzLQdLg7OMC_UjhUaT8dsVP36ew8Y4PIdtkO0oAmBKLan5kZDT3BlbkFJducz93BQgy9wlM6DT7ygECE8X7rbPHMRCgjq3sxk5JdpHtcH3DOHWL-U659igpAmidtYTmMtQA"
 warnings.filterwarnings("ignore")
 
 st.title("Harmony | هارموني")
@@ -36,7 +36,12 @@ response_container = st.container()
 loader = TextLoader(data_file)
 loader.load()
 
-index = VectorstoreIndexCreator(embedding=OpenAIEmbeddings()).from_loaders([loader])
+from langchain.embeddings.openai import OpenAIEmbeddings
+
+embeddings = OpenAIEmbeddings(openai_api_key=openkey)
+
+
+index = VectorstoreIndexCreator(embedding=embeddings).from_loaders([loader])
 
 chain = ConversationalRetrievalChain.from_llm(llm=ChatOpenAI(model="gpt-3.5-turbo"),
                                               retriever=index.vectorstore.as_retriever(search_kwargs={"k": 1}))
