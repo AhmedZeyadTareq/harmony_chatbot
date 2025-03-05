@@ -23,11 +23,6 @@ Built using **Streamlit**, **LangChain**, and **OpenAI GPT**, this interactive a
 ---
 
 ## 🚀 **Setup & Installation**
-1️⃣ **Clone the repository**  
-   ```bash
-   git clone https://github.com/yourusername/HarmonyAI.git
-   cd HarmonyAI
-
 2️⃣ Install dependencies
 pip install -r requirements.txt
 
@@ -40,6 +35,9 @@ OPENAI_API_KEY = "your_api_key_here"
 streamlit run app.py
 
 5️⃣ Start chatting with HarmonyAI! 🎉
+
+Try it Online!
+[If you'd like to try the classifier online, visit:](https://harmonychatbot-eng-ahmedtareq.streamlit.app)
 
 📸 App Preview
 
