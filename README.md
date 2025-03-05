@@ -37,7 +37,7 @@ streamlit run app.py
 5️⃣ Start chatting with HarmonyAI! 🎉
 
 Try it Online!
-[If you'd like to try the classifier online, visit:](https://harmonychatbot-eng-ahmedtareq.streamlit.app)
+[link](https://harmonychatbot-eng-ahmedtareq.streamlit.app)
 
 📸 App Preview
 
