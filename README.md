@@ -36,7 +36,7 @@ streamlit run app.py
 
 5️⃣ Start chatting with HarmonyAI! 🎉
 
-## You can Try it Online:
+## 🌐 **You can Try it Online:**
 [Harmony Chatbot](https://harmonychatbot-eng-ahmedtareq.streamlit.app)
 
 📸 App Preview
