@@ -41,12 +41,12 @@ streamlit run app.py
 
 📸 App Preview
 
-👨‍💻 About the Developer
-This project was implemented by:
-🔹 Ahmed Zeyad Tareq
-🔹 AI Engineer & Data Scientist
-🔹 📷 Instagram: @adlm7
-🔹 🔗 LinkedIn: Ahmed Zeyad Tareq
+👨‍💻 About the Developer<br>
+This project was implemented by:<br>
+🔹 Ahmed Zeyad Tareq<br>
+🔹 AI Engineer & Data Scientist<br>
+🔹 📷 Instagram: @adlm7<br>
+🔹 🔗 LinkedIn: [AhmedZeyadTareq](https://www.linkedin.com/in/ahmed-zeyad-tareq)<br>
 
 ⭐ Support & Contribution
 If you find this project useful, give it a star ⭐!
