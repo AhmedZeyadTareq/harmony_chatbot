@@ -37,16 +37,16 @@ embeddings = OpenAIEmbeddings(openai_api_key=openkey)
 
 index = VectorstoreIndexCreator(embedding=embeddings).from_loaders([loader])
 
-chain = ConversationalRetrievalChain.from_llm(llm=ChatOpenAI(model="gpt-3.5-turbo"),
+chain = ConversationalRetrievalChain.from_llm(llm=ChatOpenAI(model="gpt-4.1-nano"),
                                               retriever=index.vectorstore.as_retriever(search_kwargs={"k": 1}))
 
-if 'history' not in st.session_state:  # هنا قائمة فيها قواميس كل قاموس عبارة عن سؤال يمثل المفتاح والجواب يمثل القيمة
+if 'history' not in st.session_state: 
     st.session_state['history'] = []
 
-if 'generated' not in st.session_state:  # هنا نخزن فقط قيم الاجوبة المولدة
+if 'generated' not in st.session_state: 
     st.session_state['generated'] = ["مرحبا..انا هنا لمساعدتك اسأل كل ما تحب بخصوص منتجات هارموني"]
 
-if 'past' not in st.session_state:  # هنا نخزن فقط الاسئلة والطلبات المدخلة
+if 'past' not in st.session_state:
     st.session_state['past'] = ["Hey ! 👋"]
 
 
